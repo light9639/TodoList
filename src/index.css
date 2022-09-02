@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2b2c48;
+  font-family: "Jost", sans-serif;
+  background-image: url(/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Page {
+  background-color: white;
+  width: 500px;
+  height: 590px;
+  text-align: center;
+  margin: auto;
+  margin-top: 125px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 540px) {
+  .Page {
+    width: 95%;
+    margin-top: 50px;
+  }
+}

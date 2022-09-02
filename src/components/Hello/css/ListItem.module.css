@@ -1,0 +1,48 @@
+.myListBox {
+    width: 400px;
+    height: 360px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.myListBoxItem {
+    padding: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TrashBTN {
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+    transition: .5s;
+}
+
+.TrashBTN:hover,
+.checkBTN:hover,
+.checkBTN2:hover {
+    transform: scale(1.5);
+    color: blueviolet;
+}
+
+.checkBTN {
+    padding: 5px;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.checkBTN2 {
+    padding: 5px;
+    color: blueviolet;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.myText {
+    text-decoration: line-through;
+    text-decoration-color: blueviolet;
+    color: blueviolet;
+}
