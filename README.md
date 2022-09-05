@@ -24,6 +24,8 @@ yarn dev
 - useState, useEffect 등 리액트 Hook을 사용하였습니다.
 - useState를 이용해 바로 렌더링 시켰고, useEffect 와 같은 Life Cycle을 이용해 `mount`, `unmount`시 함수를 실행하였습니다.
 - Component로 `inputItem`, `ListItem`, `TitleItem`을 만든 후 App.tsx에서 조합하였습니다.
+### :zap: TypeScript
+- 타입스크립트를 이용하여 타입을 지정함으로써 오류의 가능성을 줄였습니다.
 ### :zap: Module.css
 - module.css를 사용함으로써 클래스 간의 충돌을 방지하였습니다.
 ### :zap: Vite
