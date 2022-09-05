@@ -27,11 +27,15 @@ input {
     padding: 40px 0;
     margin: 0 auto;
 }
+
 @media screen and (max-width: 540px) {
     input {
         width: 60%;
     }
     .InputBTN {
         width: 15%;
+    }
+    .InputBox {
+        padding: 25px 0;
     }
 }

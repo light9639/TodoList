@@ -28,6 +28,6 @@ body {
 @media screen and (max-width: 540px) {
   .Page {
     width: 95%;
-    margin-top: 50px;
+    margin-top: 20%;
   }
 }

@@ -46,3 +46,9 @@
     text-decoration-color: blueviolet;
     color: blueviolet;
 }
+
+@media screen and (max-width: 540px) {
+    .myListBox {
+        width: 95%;
+    }
+}
