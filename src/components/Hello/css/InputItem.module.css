@@ -20,7 +20,7 @@ input {
 }
 
 .InputBox {
-    background-image: url(/background.jpg);
+    background-image: url("https://raw.githubusercontent.com/light9639/TodoList/master/public/background.jpg");
     background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
     width: 100%;

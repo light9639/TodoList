@@ -18,16 +18,17 @@ function ListItem(props: StateList): JSX.Element {
                   icon={faCheck}
                   onClick={() => {
                     const myBox: ListType[] = JSON.parse(localStorage.getItem('myBox') || '{}');
+                    let myBoxContent: any = myBox[i].Count;
 
-                    myBox[i].Count++;
+                    myBoxContent++;
                     localStorage.setItem('myBox', JSON.stringify(myBox));
                     props.setList(myBox);
 
-                    if (myBox[i].Count % 2 === 0) {
+                    if (myBoxContent % 2 === 0) {
                       myBox[i].ThisState = false;
                       localStorage.setItem('myBox', JSON.stringify(myBox));
                       props.setList(myBox);
-                    } else if (myBox[i].Count % 2 === 1) {
+                    } else if (myBoxContent % 2 === 1) {
                       myBox[i].ThisState = true;
                       localStorage.setItem('myBox', JSON.stringify(myBox));
                       props.setList(myBox);
