@@ -26,8 +26,8 @@ yarn dev
 - Component로 `inputItem`, `ListItem`, `TitleItem`을 만든 후 App.tsx에서 조합하였습니다.
 ### :zap: TypeScript
 - 타입스크립트를 이용하여 타입을 지정함으로써 오류의 가능성을 줄였습니다.
-### :zap: Module.css
-- module.css를 사용함으로써 클래스 간의 충돌을 방지하였습니다.
+### :zap: Module.scss
+- module.scss를 사용함으로써 클래스 간의 충돌을 방지하였습니다.
 ### :zap: Vite
 - WebPack을 사용하는 대신 Vite라는 2세대 번들링 툴을 사용하여 서버에서 작동하는 JS의 크기를 줄이고 속도를 높였습니다.
 ### :zap: Localstorage

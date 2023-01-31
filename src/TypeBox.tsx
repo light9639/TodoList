@@ -4,7 +4,7 @@ export interface StateList {
 }
 
 export interface ListType {
-  MyArtcle?: string;
+  MyArticle?: string;
   Count?: number;
   ThisState?: boolean;
   OriginId?: string;

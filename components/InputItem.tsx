@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { ListType, StateList } from '../TypeBox';
-import styles from '../css/InputItem.module.css';
+import React, { useState } from 'react';
+import { ListType, StateList } from '@src/TypeBox';
+import styles from '@src/scss/InputItem.module.scss';
 
-function InputItem(props: StateList): JSX.Element {
-  const [myText, setMyText] = useState<string>();
+export default function InputItem(props: StateList): JSX.Element {
+  const [myText, setMyText] = useState<string>('');
   // eslint-disable-next-line prefer-const
   let [click, setClick] = useState<number>(1);
-  const [id, setId] = useState<string>();
+  const [id, setId] = useState<string>('');
 
   //고유 id 생성
   function newId(): string {
@@ -14,7 +14,7 @@ function InputItem(props: StateList): JSX.Element {
   }
 
   return (
-    <>
+    <React.Fragment>
       <div className='Input_Background'></div>
       <div className={styles.InputBox}>
         <input
@@ -37,7 +37,7 @@ function InputItem(props: StateList): JSX.Element {
             } else if (box.length === 6) {
               alert('6개이상 입력금지');
             } else {
-              box.push({ MyArtcle: myText, Count: click, ThisState: false, OriginId: id });
+              box.push({ MyArticle: myText, Count: click, ThisState: false, OriginId: id });
               localStorage.setItem('myBox', JSON.stringify(box));
               props.setList(box);
             }
@@ -47,8 +47,6 @@ function InputItem(props: StateList): JSX.Element {
           ADD
         </button>
       </div>
-    </>
+    </React.Fragment>
   );
 }
-
-export default InputItem;

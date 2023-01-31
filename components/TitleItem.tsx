@@ -1,6 +1,6 @@
-import styles from '../css/Title.module.css';
+import styles from '@src/scss/Title.module.scss';
 
-function TitleItem() {
+export default function TitleItem(): JSX.Element {
   const today = new Date();
   const year = today.getFullYear();
   const month = ('0' + (today.getMonth() + 1)).slice(-2);
@@ -13,4 +13,3 @@ function TitleItem() {
     </div>
   );
 }
-export default TitleItem;

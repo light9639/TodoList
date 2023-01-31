@@ -1,0 +1,22 @@
+@mixin mobile {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
+
+.Title {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  color: #000;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 85%;
+  }
+
+  &>p {
+    font-weight: bold;
+    color: #000;
+  }
+}

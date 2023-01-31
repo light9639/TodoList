@@ -1,9 +1,19 @@
+@mixin mobile {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+
 input {
     width: 280px;
     height: 30px;
     padding: 7px;
     border: 0;
     border-radius: 5px 0 0 5px;
+
+    @include mobile {
+        width: 60%;
+    }
 }
 
 .InputBTN {
@@ -14,10 +24,16 @@ input {
     background: #333;
     border: 1px solid #333;
     border-radius: 0px 5px 5px 0;
+
+    @include mobile {
+        width: 15%;
+    }
+
+    &:hover {
+        opacity: .75;
+    }
 }
-.InputBTN:hover {
-    opacity: .75;
-}
+
 
 .InputBox {
     background-image: url("https://raw.githubusercontent.com/light9639/TodoList/master/public/background.jpg");
@@ -26,16 +42,8 @@ input {
     width: 100%;
     padding: 40px 0;
     margin: 0 auto;
-}
 
-@media screen and (max-width: 540px) {
-    input {
-        width: 60%;
-    }
-    .InputBTN {
-        width: 15%;
-    }
-    .InputBox {
+    @include mobile {
         padding: 25px 0;
     }
 }
