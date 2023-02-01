@@ -1,4 +1,4 @@
-# :zap: TodoList 프로젝트 소개
+# 📜 TodoList 프로젝트 소개
 :octocat: 바로가기 https://light9639.github.io/TodoList/
 
 ![화면 캡처 2022-08-22](https://raw.githubusercontent.com/light9639/TodoList/master/public/light9639.github.io_TodoList_.png)
