@@ -32,3 +32,6 @@ yarn dev
 - WebPack을 사용하는 대신 Vite라는 2세대 번들링 툴을 사용하여 서버에서 작동하는 JS의 크기를 줄이고 속도를 높였습니다.
 ### :zap: Localstorage
 - 데이터를 Localstorage에 저장함으로써 영구적인 저장이 가능함.
+## :tada: gh-pages를 이용한 배포.
+- <a href="https://www.npmjs.com/package/gh-pages">gh-pages</a>을 이용하여 빌드된 파일을 배포하였습니다.
+- 배포 링크는 https://light9639.github.io/TodoList/ 입니다.
